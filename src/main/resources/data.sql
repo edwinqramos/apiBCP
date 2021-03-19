@@ -1,0 +1,1 @@
+INSERT INTO tbl_tipocambio (id, fecha, moneda_origen, moneda_destino, factor ) VALUES (1, CURRENT_DATE(), 'SOL','USD',3.5);

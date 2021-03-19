@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  apitipocambio:
+    build: .
+    environment: 
+      - SPRING_PROFILES_ACTIVE=dev
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    networks:
+      - backend
+
+volumes:
+  my-data:
+
+networks:
+  backend: 
